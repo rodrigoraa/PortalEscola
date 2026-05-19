@@ -4,12 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portal EESJV - Inicio</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='img/logo_escola.png') }}" />
     <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}" />
   </head>
 
   <body>
     <div class="container">
       <header>
+        <img
+          class="school-logo"
+          src="{{ url_for('static', filename='img/logo_escola.png') }}"
+          alt="Logo da escola"
+        />
         <h1>Portal EESJV</h1>
         <p>Selecione o sistema que deseja acessar</p>
       </header>

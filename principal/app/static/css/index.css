@@ -27,6 +27,14 @@ header {
     margin-bottom: 50px;
 }
 
+.school-logo {
+    width: 120px;
+    max-width: 45vw;
+    height: auto;
+    display: block;
+    margin: 0 auto 18px;
+}
+
 header h1 {
     color: var(--primary);
     font-size: 3rem;
