@@ -55,7 +55,7 @@ header p {
     gap: 25px;
     margin-top: 30px;
     width: 100%;
-    max-width: 1200px; /* Aumentamos a largura máxima para caber mais cards lado a lado */
+    max-width: 1400px; /* Aumentamos a largura máxima para caber mais cards lado a lado */
     margin-left: auto;
     margin-right: auto;
 }
