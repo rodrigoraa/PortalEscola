@@ -117,13 +117,37 @@ svg.icon-library { position: absolute; width: 0; height: 0; pointer-events: none
     .school-site:hover { border-color: #52667f; }
 }
 
+/* Aproveitar monitores largos sem alterar o layout de celular e tablet. */
+@media (min-width: 1001px) {
+    .portal-shell { width: min(100%, 1600px); padding-inline: clamp(24px, 3vw, 56px); }
+}
+
+@media (min-width: 1001px) and (min-height: 801px) {
+    .systems-grid { gap: 22px; }
+    .system-card {
+        min-height: clamp(224px, calc((100svh - 300px) / 2), 360px);
+        padding: clamp(22px, 2vw, 32px);
+        border-radius: 20px;
+    }
+    .system-icon { width: 52px; height: 52px; border-radius: 14px; }
+    .system-icon svg { width: 27px; height: 27px; }
+    .external-arrow { top: clamp(24px, 2vw, 34px); right: clamp(22px, 2vw, 32px); }
+    .system-copy { margin-top: 22px; }
+    .system-copy h2 { font-size: clamp(18px, 1.2vw, 22px); }
+    .system-copy p { margin-top: 9px; font-size: 14px; }
+    .card-action { font-size: 12.5px; }
+    .school-site .system-copy { margin-top: 19px; }
+    .school-site .system-copy h2 { font-size: 26px; }
+    .site-eyebrow { font-size: 10px; }
+}
+
 @media (max-height: 800px) and (min-width: 1001px) {
     .portal-shell { padding-top: 20px; padding-bottom: 20px; }
     .portal-header { padding-bottom: 16px; }
     .portal-main { padding: 24px 0; }
     .welcome { margin-bottom: 22px; }
     .welcome h1 { font-size: 38px; }
-    .system-card { min-height: 174px; padding: 18px; }
+    .system-card { min-height: clamp(174px, calc((100svh - 300px) / 2), 250px); padding: 18px; }
     .system-icon { width: 40px; height: 40px; border-radius: 11px; }
     .external-arrow { top: 20px; right: 18px; }
     .system-copy { margin-top: 13px; }
